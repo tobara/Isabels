@@ -17,6 +17,12 @@ a:hover
    text-decoration: none;
 }
 
+.container {
+  height: 752px;
+  width: 1440px;
+  position: relative;
+}
+
 .ellipse
 {
   height:210px;
