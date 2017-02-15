@@ -7,6 +7,7 @@
 html body, #map {
     background: url('test1.png');
     overflow-y: hidden;
+    overflow-x: hidden;
     text-decoration: none;
 }
 a{
@@ -21,6 +22,17 @@ a:hover
   height: 752px;
   width: 1440px;
   position: relative;
+}
+
+.logotitle {
+  left: 890px;
+  bottom: 320px;
+  position: absolute;
+  font-family: "Chaloops Regular";
+  font-size: 78px;
+  color: #E8E2D3;
+  -webkit-transform: rotate(28deg);
+  -moz-transform: rotate(28deg);
 }
 
 .ellipse
