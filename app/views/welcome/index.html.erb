@@ -3,11 +3,41 @@
 
 <html>
 <body>
+
+
 <div class="container">
-<div class = "ellipse"></div>
-<div class="logotitle">Isabel's</div>
-<a class="home_landing_link" href="#">Home</a>
-<a class="menu_landing_link" href="#">Menu</a>
-</div>
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">Menu</a>
+    </div>
+  </div>
+
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "50%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+  <div class = "ellipse"></div>
+  <div class="logotitle">Isabel's</div>
+  <div class="social_landing_links">
+    <a href="https://www.facebook.com/isabelsinavalon"><%= image_tag('fb-10.png', alt: "Isabel's Facebook", height: "50", hspace: "10", width: "50", id: "social_glow") %></a>
+<!--   </div> -->
+  <!-- <div class="twitter_landing_link"> -->
+    <a href="https://www.twitter.com/isabelsinavalon"><%= image_tag('grey-twitter-icon.png', alt: "Isabel's twitter", height: "50", hspace: "10", width: "50", id: "social_glow") %></a>
+ <!--  </div> -->
+<!--   <div class="instagram_landing_link"> -->
+    <a href="https://www.instagram.com/isabelsinavalon"><%= image_tag('social-icons-grey-circle-instagram.png', alt: "Isabel's instagram", height: "50", hspace: "10", width: "50", id: "social_glow") %></a>
+  </div>
+  <a class="menu_landing_link">
+  <button class="hamburger" onclick="openNav()">&#9776;</button>
+  </a>
+  </div>
 </body>
 </html>

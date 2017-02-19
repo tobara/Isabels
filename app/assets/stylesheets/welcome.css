@@ -16,6 +16,7 @@ text-decoration:none;
 a:hover
 {
    text-decoration: none;
+   cursor:pointer;
 }
 
 .container {
@@ -25,8 +26,10 @@ a:hover
 }
 
 .logotitle {
-  left: 890px;
-  bottom: 320px;
+  width: 342px;
+  left: 860px;
+  bottom: 360px;
+  text-align: center;
   position: absolute;
   font-family: "Chaloops Regular";
   font-size: 78px;
@@ -40,8 +43,8 @@ a:hover
   height:210px;
   width:320px;
   position: absolute;
-  bottom: 260px;
-  left: 838px;
+  bottom: 300px;
+  left: 860px;
   border: 4px solid #E8E2D3;
   border-radius:160px / 105px;
   background-color:transparent;
@@ -50,20 +53,63 @@ a:hover
     -moz-transform: rotate(28deg);
 }
 
-
- .home_landing_link {
+#social_glow {
+  -webkit-animation-name: grayPulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  border-radius: 50%;
+}
+ .social_landing_links {
+    opacity: 0.5;
     font-family: "Chaloops Regular";
     position: absolute;
-    bottom: 205px;
-    right: 550px;
+    top: 480px;
+    left: 754px;
+    height: 50px;
+    width: 320px;
+    display:inline-block;
+    text-align: center;
+    padding-left: 20px;
    /* top: 510px;
     right: 820px*/;
     font-size: 38px;
     color: #E8E2D3;
     text-decoration: none;
-    -webkit-transform: rotate(27deg);
+    -webkit-transform: rotate(28deg);
   /* Firefox */
-    -moz-transform: rotate(27deg);
+    -moz-transform: rotate(28deg);
+
+}
+ .twitter_landing_link {
+    opacity: 0.5;
+    font-family: "Chaloops Regular";
+    position: absolute;
+    top: 450px;
+    left: 920px;
+   /* top: 510px;
+    right: 820px*/;
+    font-size: 38px;
+    color: #E8E2D3;
+    text-decoration: none;
+    -webkit-transform: rotate(28deg);
+  /* Firefox */
+    -moz-transform: rotate(28deg);
+
+}
+ .instagram_landing_link {
+    opacity: 0.5;
+    font-family: "Chaloops Regular";
+    position: absolute;
+    bottom: 205px;
+    right: 750px;
+   /* top: 510px;
+    right: 820px*/;
+    font-size: 38px;
+    color: #E8E2D3;
+    text-decoration: none;
+    -webkit-transform: rotate(28deg);
+  /* Firefox */
+    -moz-transform: rotate(28deg);
 
 }
 
@@ -83,16 +129,13 @@ a:hover
  .menu_landing_link {
     font-family: "Chaloops Regular";
     position: absolute;
-    bottom: 135px;
-    left: 940px;
-   /* top: 510px;
-    right: 820px*/;
-    font-size: 38px;
+    bottom: 180px;
+    left: 935px;
+    font-size: 30px;
     color: #E8E2D3;
     text-decoration: none;
-    -webkit-transform: rotate(27deg);
-  /* Firefox */
-    -moz-transform: rotate(27deg);
+    -webkit-transform: rotate(28deg);
+    -moz-transform: rotate(28deg);
 
 }
 
@@ -108,3 +151,85 @@ a:hover
 .menu_landing_link:hover {
   border-bottom: 5px solid rgba(192, 192, 192, 1);
 }
+
+.overlay {
+    height: 90%;
+    width: 0;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+   /* background-color: rgb(0,0,0);*/
+    background-color: rgba(0,0,0, 0.9);
+    opacity: 0.5;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+@-webkit-keyframes grayPulse {
+  from { background-color: transparent; -webkit-box-shadow: 0 0 9px #D3D3D3; }
+  50% { background-color: transparent; -webkit-box-shadow: 0 0 18px #D3D3D3; }
+  to { background-color: transparent; -webkit-box-shadow: 0 0 9px #D3D3D3; }
+}
+
+@-webkit-keyframes whitePulse {
+  from { background-color: transparent; -webkit-box-shadow: 0 0 9px #FFFFFF; }
+  50% { background-color: transparent; -webkit-box-shadow: 0 0 18px #FFFFFF; }
+  to { background-color: transparent; -webkit-box-shadow: 0 0 9px #FFFFFF; }
+}
+
+.hamburger {
+  -webkit-animation-name: whitePulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+
+
+.hamburger{
+  background:transparent;
+  position:absolute;
+  top:0;
+  right:0;
+  border-radius: 50%;
+  line-height:45px;
+  padding:10px 15px 10px 16px;
+  color:#FFFFFF;
+  border:0;
+  font-size:1.1em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+
