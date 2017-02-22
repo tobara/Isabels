@@ -51,6 +51,19 @@ a:hover
   -moz-transform: rotate(28deg);
 }
 
+.address {
+  width: 342px;
+  left: 822px;
+  bottom: 330px;
+  text-align: center;
+  position: absolute;
+  font-family: "Chaloops Regular";
+  font-size: 26px;
+  color: #E8E2D3;
+  -webkit-transform: rotate(28deg);
+  -moz-transform: rotate(28deg);
+}
+
 .ellipse
 {
   height:210px;
